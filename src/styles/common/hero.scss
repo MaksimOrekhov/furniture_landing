@@ -1,0 +1,139 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  // min-height: 650px;
+  padding: 0 50px;
+  margin: 0 auto;
+  &__header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 750px;
+  background: url("../images/hero-bg.png") bottom no-repeat;
+  background-size: cover;
+  
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // height: 100%;
+    min-height: 650px;
+  }
+  &__text {
+    max-width: 430px;
+    font-size: 30px;
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  &__title {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: bold;
+  }
+}
+
+.header {
+  width: 100vw;
+  background-color: #fff;
+
+  &__logo {
+    align-self: center;
+  }
+  &__menu {
+    display: flex;
+    font-size: 24px;
+    padding: 35px 0;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.item__link {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form__elem {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba($color: #7EB7CC, $alpha: 0.9);
+  border-radius: 5px;
+  height: auto;
+}
+
+.order__form {
+  padding: 20px 25px 25px 25px;
+}
+
+.form__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form__block-input {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  &-textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;  
+    border-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+
+  }
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.send__button, 
+.reset__button {
+  padding: 10px 0;
+  width: 48%;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #7EB7CC;
+  border-radius: 3px;
+  background-color: #5D99C4;
+  color: #fff;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: #4887B0;
+    box-shadow: 0px -2px 0px #26638b inset;
+    transition: 0.4s;
+  }
+}

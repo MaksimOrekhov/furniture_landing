@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Мебель ручной работы</title>
+    <link rel="stylesheet" href="./assets/styles/app.min.css"/>
+    <script src="./assets/scripts/app.js" defer="defer"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container__header">
+          <div class="header__logo"><img class="logo__image" src="./assets/images/logo.png" alt=""/></div>
+          <ul class="header__menu">
+            <li class="menu__item"><a class="item__link" href="#">Страница 1</a></li>
+            <li class="menu__item"><a class="item__link" href="#">Страница 2</a></li>
+            <li class="menu__item"><a class="item__link" href="#">Страница 3</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero">  
+        <div class="container">
+          <div class="hero__title">Сайт мебели</div>
+          <div class="hero__info">
+            <div class="hero__text">Наша мебель изготовлена по новейшим технологиям. Она великолепно подойдет к любому интерьеру. Сделайте заказ прямо сейчас и Вы не пожалеете.</div>
+            <form class="form__elem" action="server.php" method="post" id="order-form">
+              <div class="order__form">
+                <div class="form__title">Оставьте ваши данные и мы вам перезвоним.</div>
+                <div class="form__inputs">
+                  <input class="form__block-input" type="text" id="name" name="user-name" placeholder="Имя" required="required"/>
+                  <input class="form__block-input" type="text" id="phone" placeholder="Телефон" name="user-phone" required="required"/>
+                  <input class="form__block-input" type="text" id="email" placeholder="Email" name="email"/>
+                  <textarea class="form__block-input-textarea" type="text" placeholder="Ваше сообщение" id="comment" name="comment"></textarea>
+                </div>
+                <div class="form__buttons">
+                  <button class="send__button" type="submit">Отправить</button>
+                  <input class="reset__button" type="reset" value="Очистить"/>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container container__about">
+          <div class="about__title">Мы делаем мебель </div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae atque earum, voluptas qui dolore quis? Tenetur non, unde perspiciatis quas eum fuga magnam enim corporis quam repudiandae soluta libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim aliquid deleniti quod esse sint ut ipsa quasi temporibus adipisci consequuntur veniam dolorem error similique sed eum, dolorum optio, dolor commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae atque earum, voluptas qui dolore quis? Tenetur non, unde perspiciatis quas eum fuga magnam enim corporis quam repudiandae soluta libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim aliquid deleniti quod esse sint ut ipsa quasi temporibus adipisci consequuntur veniam dolorem error similique sed eum, dolorum optio, dolor commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae atque earum, voluptas qui dolore quis? Tenetur non, unde perspiciatis quas eum fuga magnam enim corporis quam repudiandae soluta libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim aliquid deleniti quod esse sint ut ipsa quasi temporibus adipisci consequuntur veniam dolorem error similique sed eum, dolorum optio, dolor commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae atque earum, voluptas qui dolore quis? Tenetur non, unde perspiciatis quas eum fuga magnam enim corporis quam repudiandae soluta libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim aliquid deleniti quod esse sint ut ipsa quasi temporibus adipisci consequuntur veniam dolorem error similique sed eum, dolorum optio, dolor commodi?</div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__title">Галерея</div>
+          <div class="gallery__block">
+            <div class="gallery__col">
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text-title">Some text title</div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery2.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery5.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+            </div>
+            <div class="gallery__col">
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery5.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery2.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+            </div>
+            <div class="gallery__col">
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery4.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery5.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+            </div>
+            <div class="gallery__col">
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery4.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery3.png" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+              <div class="gallery__img"><img class="img__pic" src="./assets/images/gallery.jpg" alt=""/></div>
+              <div class="gallery__text">Some text</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
